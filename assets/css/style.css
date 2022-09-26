@@ -1,0 +1,292 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {    
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 80px;
+    background-color:#484538;
+    color:#fff;
+}
+
+
+
+nav ul,
+nav li{
+    display:flex;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    border-bottom: 1px solid #cad49d;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color:#56a3a6;
+}
+
+.section,.boas-vindas h3{
+    font-size:22px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 100px;
+
+    
+}
+
+.sub-card{
+    margin:5px;
+}
+.sub-card img{
+    margin-top: 4px;
+    width: 230px;
+    height: 150px;
+}
+
+/* efeito quando passar o mouse em cima */
+
+.sub-card-photoinfo{
+    position: absolute;
+    background-color: rgba(72,69,56, 0.9);
+    width:230px;
+    height:150px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform:uppercase;
+   
+    
+}
+
+.sub-cad-position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.sub-cad-position h4 {
+    margin-top:-10px;
+    font-size: 12px;
+}
+
+.sub-cad-position h5 {
+
+    font-size: 14px;
+}
+.sub-cad-position h3 {
+
+    font-size: 12px;
+    margin-top:-5px;
+}
+
+.sub-cad-position h2 {
+
+    font-size: 14px;
+    margin-top:-10px;
+}
+
+
+/* .sub-card-photoinfo h5{
+    font-size: 12px;
+    font-weight: 300px;
+} */
+
+.sub-card:hover .sub-card-photoinfo{
+    display: flex;
+    padding:5px;
+}
+
+.sub-card-photoinfo a{
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.footer{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+    background-color:#484538;
+    color: #fff;
+
+}
+
+.footer-icones{
+    font-size: 12px;
+    font-weight: 300px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.menu-opener{
+    display: none;
+    top: 10px;
+    width:45px;
+    margin-right: 20px;
+}
+
+.logo img{
+    width:150px;
+}
+.boas-vindas h3{
+    font-size: 16px;
+    text-align: justify;
+    text-transform:uppercase;
+    
+    
+}
+.boas-vindas h4{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.footer-icones a{
+    display:none;
+}
+
+.footer-icones h4{
+    font-size:16px;
+}
+
+@media (max-width:600px){
+
+
+
+  
+    .sub-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-opener{
+        display: block;
+        width:45px;
+        margin-right: 20px;
+        
+    }
+
+    .sub-card-photoinfo{
+        position: absolute;
+        background-color: rgba(72,69,56, 0.9);
+        width:95%;
+        height:35%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-transform:uppercase;
+       
+        
+    }
+    .logo img{
+        width:110px;
+       
+       
+    }
+
+   
+    .menu nav ul {
+        
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(72,69,56, 0.9);
+        width: 80vw;
+        height: calc(100vh);
+        right: 0;
+    }
+    
+    .menu ul{
+
+        flex-direction: column;
+    }
+
+    .boas-vindas h4{
+        font-size: 12px;
+        text-align: justify;
+        padding-right: 5px;
+        padding-left: 5px;
+        
+    }
+
+    .boas-vindas h3{
+        font-size: 16px;
+        text-align: justify;
+        padding-right: 5px;
+        padding-left: 5px;
+        text-transform:uppercase;
+        
+        
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+   
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        height:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer, .footer-icones{
+        font-size: 12px;
+       
+    }
+
+    .footer a{
+        color:#fff;
+    }
+
+    .footer, .fa-solid, .fa-brands{
+        font-size:20px;
+    }
+
+}
+@media (min-width:620px) AND (max-width:2000px){
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+}

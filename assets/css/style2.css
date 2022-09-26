@@ -1,0 +1,215 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {    
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 80px;
+    background-color:#484538;
+    color:#fff;
+}
+
+
+
+
+nav ul,
+nav li{
+    display:flex;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    border-bottom: 1px solid #cad49d;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color:#56a3a6;
+}
+
+.section,.boas-vindas h3{
+    font-size:22px;
+}
+
+
+.pedido{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pedido img{
+    width: 500px;
+    margin: 10px;
+}
+
+.descri {
+    margin-left: 10px;
+}
+.comprar{
+    margin-bottom: 35px;
+}
+
+
+.comprar, .fa-whatsapp{
+    font-size: 30px;
+    color: #008000;
+}
+
+.comprar a{
+    text-decoration: none;
+    color: #000;
+}
+
+.comprar span{
+    font-weight: 600;
+    font-size: 16px;
+    color: #56a3a6;
+    
+}
+.caract{
+    line-height: 1.5;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#484538;
+    color: #fff;
+    position: relative;
+    width: 100%;
+   
+}
+
+.footer-icones{
+    font-size: 12px;
+    font-weight: 300px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.menu-opener{
+    display: none;
+    top: 10px;
+    width:45px;
+    margin-right: 20px;
+}
+
+.logo img{
+    width:150px;
+}
+
+.footer-icones a{
+    display:none;
+}
+
+.footer-icones h4{
+    font-size:16px;
+}
+
+@media (max-width:600px){
+
+
+    .menu-opener{
+        display: block;
+        width:45px;
+        margin-right: 20px;
+        
+    }
+
+ 
+    .logo img{
+        width:110px;
+       
+       
+    }
+
+   
+    .menu nav ul {
+        
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(72,69,56, 0.9);
+        width: 80vw;
+        height: calc(100vh);
+        right: 0;
+    }
+    
+    .menu ul{
+
+        flex-direction: column;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        
+    }
+
+    .boas-vindas{
+        margin-left: 5px;
+    }
+
+    .pedido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .pedido img{
+        width: 95%;
+        height: auto;
+    }
+
+    .logo{
+        margin-top: -20px;
+    }
+
+    .footer{
+        height:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer, .footer-icones{
+        font-size: 12px;
+       
+    }
+
+    .footer a{
+        color:#fff;
+    }
+
+    .footer, .fa-solid, .fa-brands{
+        font-size:20px;
+    }
+
+}
+
+@media (min-width:620px) AND (max-width:2000px){
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+}

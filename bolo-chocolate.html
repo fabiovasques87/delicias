@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Delicias</title>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />    
+       <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!-- link para icones -->
+        <script src="https://kit.fontawesome.com/0518f3ccf0.js" crossoring="anonymous"> </script>
+
+<script type="text/javascript">
+
+
+window.onload = function() {
+    document.querySelector(".menu-opener").addEventListener("click", function() {
+        if (document.querySelector(".menu nav ul").style.display == 'flex') {
+            document.querySelector(".menu nav ul").style.display = 'none';
+        } else {
+        document.querySelector(".menu nav ul").style.display = 'flex';
+        console.log('ok');
+        }
+    });
+};
+
+/*para o menu amburguer aparecer só com resolução menor que 600 */
+
+window.addEventListener('resize', function () {
+    var largura = window.innerWidth;
+
+    if (largura > 600)
+    document.querySelector(".menu nav ul").removeAttribute('style');
+    });
+
+
+
+
+
+
+</script> 
+
+
+
+
+    </head>
+
+    <body>
+        <header class="header">
+        <div class="menu-esq">
+                
+            </div>
+            <div class="menu">
+                <img class="menu-opener"  src="assets/img/menu.png"/>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">deces</a></li>
+                        <li><a href="">salgados</a></li>
+                        <li><a href="">marmitas</a></li>
+                        <li><a href="">sucos</a></li>
+                        <li><a href="">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+          
+            
+        </header>    
+
+        <section class="section">
+            <div class="boas-vindas">
+                <h3>Sejá bem vindo!</h3>
+                <h4>
+                is simply dummy text of the printing and typesetting industry. 
+                </h4>
+            </div>    
+            <div class="logo">
+                <img src="assets/img/logo_mini-24.png" />
+            </div>         
+        </section>
+
+        <section class="pedido">
+            <div class="img">
+                <img src="assets/img/bolo-1.jpeg" />
+            </div>
+            <div class="descri">
+                <div class="titulo">
+                    Bolo de chocolate
+                </div>
+                <div class="caract">
+                    <p>valor: R$ 20,00 <br />is simply dummy text of the printing<br /> Ref:00456 <br />and typesetting</p>
+                </div>
+                <div class="comprar">
+                    <i class="fa-brands fa-whatsapp-square"></i> <a href="https://wa.me/53999367651"><span>clique aqui e Faça seu pedido</span></a>  
+                </div>
+            </div>
+            
+        </section>
+
+        <footer class="footer">
+            <div class="footer-icones">
+               <a href="#"><i class="fa-solid fa-arrow-left"></i></a> 
+            </div>
+            <div class="footer-icones">
+                <h4>Contato:  &nbsp; <i class="fa-brands fa-whatsapp"></i> &nbsp;(53) &nbsp;999999999
+            </div>
+            
+        </footer>
+
+
+    </body>
+
+
+
+</html>
